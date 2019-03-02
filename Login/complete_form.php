@@ -1,7 +1,7 @@
 <?php
-//session_start();
+
 if (isset($_COOKIE['sess']) or isset($_COOKIE['auth_token'])) {
-header("Location: http://localhost/welcome.php");
+    header("Location: http://localhost/welcome.php");
 }
 
 
