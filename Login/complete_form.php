@@ -89,12 +89,12 @@ if (isset($_POST['submit'])) {
    font-size: 16px;
    margin: 4px 2px;
    cursor: pointer;}
- .login {
- background-color: #008CBA;
- border: none;
- color: white;
- padding: 15px 32px;
- text-align: center;
+   .login {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
  text-decoration: none;
  display: inline-block;
  font-size: 16px;
