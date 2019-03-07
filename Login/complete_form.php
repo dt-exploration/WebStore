@@ -78,8 +78,7 @@ if (isset($_POST['submit'])) {
      <title>Log IN</title>
  	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
      <style>
-
-     .signup{
+     .signup {
        background-color: #4CAF50;
        border: none;
        color: white;
@@ -89,20 +88,20 @@ if (isset($_POST['submit'])) {
        display: inline-block;
        font-size: 16px;
        margin: 4px 2px;
-       cursor: pointer;}
+       cursor: pointer; }
     .login {
        background-color: #008CBA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;}
-#h { font-family: cursive;}
-
+       border: none;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;}
+    #h {
+       font-family: cursive; }
      </style>
  </head>
  <body>
