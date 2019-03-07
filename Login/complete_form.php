@@ -76,8 +76,8 @@ if (isset($_POST['submit'])) {
            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Log IN</title>
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-   <style>
+ 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+     <style>
 
 .signup{
    background-color: #4CAF50;
@@ -103,7 +103,7 @@ if (isset($_POST['submit'])) {
     cursor: pointer;}
 #h { font-family: cursive;}
 
- </style>
+     </style>
  </head>
  <body>
  	<div class="container" style="margin-top:70px;">
