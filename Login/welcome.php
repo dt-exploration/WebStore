@@ -30,7 +30,7 @@ if (isset($_COOKIE['auth_token']) and isset($_COOKIE['username'])) {
 }
 
 if (isset($_POST['logout'])) {
-    $_SESSION=array();
+    $_SESSION = array();
     if (ini_get("session.use_cookies")) {
     $params = session_get_cookie_params();
     setcookie(session_name(), '', time() - 42000,
