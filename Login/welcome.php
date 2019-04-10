@@ -39,9 +39,9 @@ if (isset($_POST['logout'])) {
     );
 }
     session_destroy();
-    setcookie('auth_token','',time()-5,'/');
-    setcookie('username','',time()-5,'/');
-    setcookie('sess','',time()-5,'/');
+    setcookie('auth_token', '', time()-5, '/');
+    setcookie('username', '', time()-5, '/');
+    setcookie('sess', '', time()-5, '/');
     header("Location: http://localhost/complete_form.php");
 }
 //$token = $_COOKIE['auth_token'];
