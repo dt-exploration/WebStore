@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 
     $name = test_input($_POST['name']);
 
-    $con = new mysqli('localhost','root','','website');
+    $con = new mysqli('localhost', 'root', '', 'website');
 
     $query = "SELECT * FROM users WHERE username='$name'";
 
@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
 ////////////ukoliko klikne remember me
             if ($_POST['remember'] == 1) {
 
-                $query = "UPDATE users SET token='$hashed_token' WHERE username='$name'";
+                $query = "UPDATE users SET token='$hashed_token' WHERE username = '$name'";
                 $con->query($query);
                 setcookie('auth_token', $auth_token, time()+10000, "/");
                 setcookie('username', $name, time()+10000, "/");
@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
 
              $_SESSION['auth_token'] = $auth_token;
              $_SESSION['username'] = $name;
-             setcookie('sess','1',time()+300,"/");
+             setcookie('sess', '1', time()+300, "/");
              }
              header('Location: http://localhost/welcome.php');
 
