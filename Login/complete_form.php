@@ -41,7 +41,8 @@ if (isset($_POST['submit'])) {
         if ($password_from_db == crypt($password_from_user, $salt)) {
             $auth_token = bin2hex(random_bytes(16));
             $hashed_token = crypt($auth_token, $salt);
-////////////ukoliko klikne remember me
+            
+            ////////////if user select remember me option
             if ($_POST['remember'] == 1) {
 
                 $query = "UPDATE users SET token='$hashed_token' WHERE username = '$name'";
